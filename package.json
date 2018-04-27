@@ -1,7 +1,7 @@
 {
   "name": "DigitalPackage",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "app.js",
   "repository": "https://github.com/gokannai/DigitalPackage.git",
   "author": "gopikrishnan <gokannai@in.ibm.com>",
   "license": "none",
