@@ -1,0 +1,44 @@
+<a class="blueButton" href="#!/adrmn">Go Back</a>
+<div class="clear"></div>
+<div class="spacer2"></div>
+
+<div class="panel panel-default">
+   
+	<div class="headerBarblock">
+        <div class="floatLeft scanner"></div>
+        <div class="floatLeft paddingLeft10">Edit Product Details</div>
+        <div class="clear"></div>
+	</div>
+	<div class="clear"></div>
+	<div class="spacer2"></div>
+	<div class="headercontentblock1"></div>
+  
+  <div class="panel-body">
+    <div class="row">
+      <div class="col-md-12">
+      <form ng-submit="updadr()" ng-init="getadrmn()">
+        <div class="form-group">
+         <input name="entertext" type="text" class="inputboxBg selectWidth80" ng-model="adr.Quantity" size="15" maxlength="15" placeholder="5" required="">
+          <div class="padding10">*Qty</div>	  
+        </div>
+        <div class="form-group">
+          <input name="entertext" type="text" class="inputboxBg selectWidth80" ng-model="adr.Item" size="15" maxlength="15" placeholder="89723" required="">
+          <div class="padding10">*Item ID, UPC, SIM, or IMEI</div>
+        </div>
+        <div class="form-group">
+          <input name="entertext" type="text" class="inputboxBg selectWidth80" ng-model="adr.Name" size="15" maxlength="15" placeholder="Item Name"  required="">
+          <div class="padding10">*Item Name</div>
+        </div>
+		<div class="form-group">
+          <input name="entertext" type="text" class="inputboxBg selectWidth80" ng-model="adr.Rate" size="15" maxlength="15" placeholder="$$$$$$" required="">
+          <div class="padding10">*Price $</div>
+        </div>
+        <div class="form-group">
+        <div class="floatLeft selectWidth1">
+		  <button type="submit" class="blueButton">Submit</button>
+        </div>
+      </form>
+    </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,43 @@
+<div class="panel panel-default" ng-init="getadrmns()">
+  <div class="headerBarblock">
+        	<!--<div class="floatLeft boldText">&minus;</div>-->
+            <div class="floatLeft paddingLeft10">Product Inventory : Added Item</div>
+            <div class="clear"></div>
+  </div>
+	<div class="clear"></div>
+	<div class="spacer2"></div>
+  <div class="headercontentblock1">
+  </div>
+  
+  <div class="panel-body">
+    <div class="row">
+<!--{{adrmn[0].Title}}-->
+    	<div ng-repeat="adrm in adrmn">
+    		<div class="col-md-6">
+    			<!--<div class="col-md-6">
+					<!--<div class="padding10">Item Name</div>
+    				<p>{{adrm.Name}}</p>-->
+					<div class="clear"></div>
+					<div class="spacer2"></div>
+					<div class="clear"></div>
+					<div class="spacer2"></div>
+					<div class="floatLeft selectWidth1">
+						<a class="blueButton" href="#!/adrmn/details/{{adrm._id}}"> {{adrm.Name}} </a>
+					</div>
+					<div class="clear"></div>
+					<div class="spacer2"></div>
+    			<!--</div>-->
+    		</div>
+    	</div>
+    </div>
+  </div>
+  <div class="container1">
+    	<div class="blueText boldText">These items will be tied to Sales Rep req.body.logemail.</div>
+        <div>To change the rep, select from dropdown.</div>
+        <div class="spacer2"></div>
+        <div class="boldText">
+        	AT&T Any City, USA<br>
+        	(555) 555-5555
+        </div>
+    </div>
+</div>

@@ -1,0 +1,87 @@
+<?php
+session_start();
+?>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, target-densityDpi=device-dpi, user-scalable=no"/>
+<title>OPUS MOBILE</title>
+
+<link rel="stylesheet" type="text/css" href="css/OM.css">
+
+<body>
+
+<div class="container3">	
+	<div class="w3">
+			<div class="loginForm">
+				<center><h3>OPUS MOBILE Admin Login</h3></center>
+				<div class="selectWidth95">
+				<form action="/" method="post">
+					<div class="selectWidth95">
+						<input name="logemail" id="logemail" type="text" class="inputboxBg" size="15" maxlength="15" placeholder="ATTUID" required="">
+					</div>
+					<div class="spacer1"></div>
+					<div class="selectWidth95">
+						<input type="password" name="logpassword" class="inputboxBg" placeholder="Password" required="">
+					</div>  
+					<a href="#" title="Login Information">
+						<button class="roundedButtoninfo" type="button" align="middle"> </button>
+					</a>
+					
+					<div>
+					<center><input class="loginButtonblue" id="" type="submit" value=" Login " ></center>
+					</div>
+				</form>
+			</div>
+	</div>
+	
+<?php
+// to change a session variable, just overwrite it
+$_SESSION["admin"] = "logemail";
+?>
+</div>
+
+<!--<div class="spacer1"></div>
+<div class="spacer1"></div>
+<div class="spacer1"></div>
+<div class="spacer1"></div>
+<div class="spacer1"></div>
+<div class="spacer1"></div>
+<div class="spacer1"></div>
+<div class="spacer5"></div>
+
+	<div class="loginForm">
+			<div class="signin-form profile">
+				<h3>Register</h3>
+				
+				<div class="login-form">
+					<form action="/" method="post">
+						<input type="text" name="email" class="inputboxBg" size="15" maxlength="15" placeholder="E-mail" required="">
+						<div class="spacer1"></div>
+						<input type="text" name="username" class="inputboxBg" size="15" maxlength="15" placeholder="Username" required="">
+						<div class="spacer1"></div>
+						<input type="password" name="password" class="inputboxBg" size="15" maxlength="15" placeholder="Password" required="">
+						<div class="spacer1"></div>
+						<input type="password" name="passwordConf" class="inputboxBg" size="15" maxlength="15" placeholder="Confirm Password" required="">
+						<div class="spacer1"></div>
+						<a href="#" title="Login Information">
+							<button class="roundedButtoninfo" type="button" align="middle"> </button>
+						</a>
+						<div>
+							<input class="loginButtonblue" id="" type="submit" value=" REGISTER " >
+						</div>
+					</form>
+				</div>
+				<p><a href="#"> By clicking register, I agree to your terms</a></p>
+			</div>
+	</div> 
+	-->
+	<div class="clear"></div>
+		<!--//signin-form-->	
+	</div>
+	<div class="copyright">
+		<center><p> &copy; All rights reserved | Design by <a target="_blank" >IBM Full Stack Program - Digital Customer</a></p></center>
+	</div>	
+</body>
+</html>

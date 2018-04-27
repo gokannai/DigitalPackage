@@ -1,0 +1,55 @@
+<a class="blueButton" href="#!/adrmn">Go Back</a>
+
+<div class="clear"></div>
+<div class="spacer2"></div>
+
+<div class="panel panel-default" ng-init="getadrmn()">
+  <!--<div class="panel-heading">
+    <h3 class="panel-title">{{adrm.Name}}</h3>
+  </div>-->
+  <div class="headerBarblock">
+        	<div class="floatLeft scanner"></div>
+            <div class="floatLeft paddingLeft10">Product Details</div>
+            <div class="clear"></div>
+  </div>
+	<div class="clear"></div>
+	<div class="spacer2"></div>
+  <div class="headercontentblock1"></div>
+  
+  <div class="panel-body">
+    <div class="row">
+      <!--<div class="col-md-4">
+        <img src="{{book.image_url}}">
+      </div>-->
+      <div class="col-md-8">
+        <ul class="list-group">
+		  <div class="padding10">*Item ID, UPC, SIM, or IMEI</div>
+          <div class="inputboxBg selectWidth1">{{adrm.Item}}</div>
+		  <div class="clear"></div>
+		  <div class="spacer2"></div>
+		  <div class="padding10">*Item Name</div>
+          <div class="inputboxBg selectWidth1">{{adrm.Name}}</div>
+		  <div class="clear"></div>
+		  <div class="spacer2"></div>
+		  <div class="padding10">*Quantity</div>
+          <div class="inputboxBg selectWidth1">{{adrm.Quantity}}</div> 
+		  <div class="clear"></div>
+		  <div class="spacer2"></div>
+		  <div class="padding10">*Price $</div>
+		  <div class="inputboxBg selectWidth1">{{adrm.Rate}}</div>
+		  <div class="clear"></div>
+		  <div class="spacer2"></div>
+		  <div class="padding10">*Last Updated Date</div>
+          <div class="inputboxBg selectWidth1">{{adrm.update_date}}</div>
+        </ul>
+        <!--<a target="_blank" href="{{book.buy_url}}" class="btn btn-primary">Buy on Amazon</a>-->
+      </div>
+    </div>
+	<div class="clear"></div>
+	<div class="spacer2"></div>
+	<div class="pull-left">
+		<a class="blueButton" href="#!/adrmn/edit/{{adrm._id}}">Edit  </a>   <a class="blueButton" href="#" ng-click="deladr(adrm._id)">Delete</a>
+	</div>
+  </div>
+</div>
+
