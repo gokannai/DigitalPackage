@@ -5,3 +5,5 @@
 # From DB Side - Open the MongoDB session.	
 # Go to app.js in the main directory and execute the command node app.js.
 # Now the application is ready to go http://localhost:3000/ 
+# username - testuser4 , Password - test
+
